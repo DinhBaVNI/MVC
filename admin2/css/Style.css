@@ -1,0 +1,32 @@
+
+body{
+	font-family: 'Roboto';
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	min-width: 1120px;
+	
+	background-size: 1380px;
+	background-image: url(https://2.bp.blogspot.com/-T5BH1fB4VgM/UMaomCGMupI/AAAAAAAAB3w/uOL44VZFul8/s1600/anh-dep-thien-nhien14.jpg);
+
+}
+.fixed-top {
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index:1000;  
+}
+.clearfix{
+	clear: both;
+}
+.container{
+	width: 100%;
+	margin: 0 auto;
+}
+@media(min-width:1220px){
+	.container{
+		width: 90%;
+		margin: 0 auto;
+	}
+}

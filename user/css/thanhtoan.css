@@ -1,0 +1,51 @@
+.khung-chua-san-pham{
+	margin-top: 10px;
+	margin-left: 100px;
+	display: inline-block;
+	width: 874px;
+	min-width: 874px;
+}
+.section{
+	display: inline-block;
+	height:auto;
+	width: auto;
+	background-color: rgb(136, 208, 226);
+}
+.section-head{
+	margin: 0;
+	font-size: 22px;
+	border: 1px solid rgb(191, 191, 191);
+	margin-left: 2px;
+	padding-top: 8px;
+	width: 1158px;
+	padding-bottom: 5px;
+	text-indent: 30px;
+	background: linear-gradient(to right,#003e52,#1895b0);
+	color: white;
+	border-radius: 8px;
+}
+form{
+	margin-top: 20px;
+    text-align: center;
+}
+form .inp{
+	width: 30%;
+	border-radius: 5px;
+	padding: 10px;
+	
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.btn-lg{
+	width: 100px;
+	height: 35px;
+	padding: 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	color: #ffffff;
+	background-color: #1895b0;
+	margin-top: 40px;
+}
+.btn-lg:hover{
+	background-color: #003e52;
+}

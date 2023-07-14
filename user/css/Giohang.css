@@ -1,0 +1,44 @@
+.khung-chua-san-pham{
+	margin-top: 15px;
+	margin-left: 20px;
+	display: inline-block;
+	width: 874px;
+	min-width: 874px;
+}
+.section{
+	display: inline-block;
+	height:460px;
+	width: 1050px;
+	overflow-x:hidden;
+    overflow-y:auto;
+	background-color: rgb(136, 208, 226);
+    opacity: 0.85;
+}
+form{
+	padding-top: 20px;
+    text-align: center;
+}
+form thead tr th{
+    font-size: 18px;
+    padding-left: 80px;
+}
+form tbody tr td{
+       padding-left: 80px;
+}
+form tbody tr td a{
+		text-decoration: none;
+}
+.btn{
+    width: 20px;
+}
+.Sum{
+	margin-left: 600px;
+	font-size: 24px;
+}
+.Sum a{
+	text-decoration: none;
+}
+.Sum a:hover{
+	background-color:white ;
+	
+}
