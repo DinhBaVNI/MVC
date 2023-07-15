@@ -1,6 +1,5 @@
 .khung-chua-san-pham{
-	margin-top: 10px;
-	margin-left: 100px;
+	margin-left: 50px;
 	display: inline-block;
 	width: 874px;
 	min-width: 874px;
@@ -10,6 +9,10 @@
 	height:auto;
 	width: auto;
 	background-color: rgb(136, 208, 226);
+	overflow-x:hidden;
+    overflow-y:auto;
+	background-color: rgb(136, 208, 226);
+    opacity: 0.80;
 }
 .section-head{
 	margin: 0;
@@ -17,7 +20,7 @@
 	border: 1px solid rgb(191, 191, 191);
 	margin-left: 2px;
 	padding-top: 8px;
-	width: 1158px;
+	width: autopx;
 	padding-bottom: 5px;
 	text-indent: 30px;
 	background: linear-gradient(to right,#003e52,#1895b0);
@@ -32,7 +35,6 @@ form .inp{
 	width: 30%;
 	border-radius: 5px;
 	padding: 10px;
-	
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -40,12 +42,54 @@ form .inp{
 	width: 100px;
 	height: 35px;
 	padding: 5px;
-	margin-bottom: 10px;
+	margin:20px 0px 10px 550px;
 	border-radius: 5px;
-	color: #ffffff;
+	color: #000000;
 	background-color: #1895b0;
-	margin-top: 40px;
 }
 .btn-lg:hover{
 	background-color: #003e52;
+	color: aliceblue;
+}
+.row{
+    width: 1100px;
+    display: flex;
+	
+    margin-left: 60px;
+    margin-right: 100px;
+}
+.order-md-1{
+	margin-left: 200px;
+}
+.mb-4{
+	margin-left: 200px;
+}
+.mb-5{
+	font-size: 18px;
+}
+.form-control{
+	width: 200px;
+	height: 20px;
+	border-radius: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	box-shadow: 20px 10px 12px 2px #1895b0;
+	border: 50px;
+}
+.lead{
+	font-size: 16px;
+	color: rgb(29, 32, 194);
+}
+.btn-secondary{
+	width: 30%;
+	border-radius: 7px;
+	padding: 2px;
+	
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #1895b0;
+}
+.btn-secondary:hover{
+	background-color: #003e52;
+	color: aliceblue;
 }
