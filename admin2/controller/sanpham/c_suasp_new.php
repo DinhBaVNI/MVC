@@ -19,7 +19,7 @@
         if($image_temp != "")
         {
             move_uploaded_file($image_temp, "../img/sanphamnew/$image" ); 
-            $db->update('product', array(
+            $db->update('product_new', array(
                 'id' =>$id1,  
                 'img_link'=> $image,
                 'name'=>$name,

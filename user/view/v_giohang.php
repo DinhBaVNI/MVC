@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Shop Phone ĐìnhBa</title>
-    <link rel="icon" href="img/logo/Logo-name.jpg">
+    <link rel="icon" href="img/logo/Logoname.jpg">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link  rel="stylesheet" href="css/Tieude.css">
     <link rel="stylesheet" href="css/Style.css">
@@ -36,7 +36,7 @@
 
         <!-- Phần header -->
 		<div class="header">
-			<a href="?page=trangchu"><img src="img/logo/Logo-name.jpg" alt="" width="120" height="90" class="logo" />
+			<a href="?page=trangchu"><img src="img/logo/Logoname.jpg" alt="" width="120" height="90" class="logo" />
 			</a>
 			<span class="ten-cua-hang">Online electronics shopping</span>
 			<div class="search">
@@ -55,7 +55,7 @@
 				<ul>
 					<li class="title">Giỏ Hàng Của Bạn</li>
 					<li><a href="?page=thongtinkh">Thông Tin Của Bạn</a></li>
-					<li><a href="#">Đơn Hàng</a></li>
+					<li><a href="?page=donhang">Quản lí đơn hàng</a></li>
 					
 				</ul>
 			</div>

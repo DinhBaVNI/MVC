@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Shop Phone ĐìnhBa</title>
-    <link rel="icon" href="img/logo/Logo-name.jpg">
+    <link rel="icon" href="img/logo/Logoname.jpg">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link  rel="stylesheet" href="css/Tieude.css">
     <link rel="stylesheet" href="css/Style.css">
@@ -20,16 +20,24 @@
 				<li><a href="#">Giới thiệu</a></li>
 				<li><a href="#">Liên hệ</a></li>
 			</ul>
+            <?php 
+                    if (isset($_SESSION['ss_admin'])){?>
 			<ul class="list-right">
-				<li class="dang-ky"><a href="?page=sign_up">Đăng ký</a></li>
-			</ul>
+
+            <li>
+                
+                     <?php echo $_SESSION['ss_admin']; ?>
+                    
+               
+            </li>
+        	</ul>
 		</div>
 		<!-- end Thanh công cụ -->
 		<div class="clearfix"></div>
 
         <!-- Phần header -->
 		<div class="header">
-			<a href="?page=trangchu"><img src="img/logo/Logo-name.jpg" alt="" width="120" height="90" class="logo" />
+			<a href="?page=trangchu"><img src="img/logo/Logoname.jpg" alt="" width="120" height="90" class="logo" />
 			</a>
 			<span class="ten-cua-hang">Shop phone online</span>
 			<div class="search">
@@ -67,39 +75,28 @@
                 </div>
                 </div>
                     
-
+                
                 <div class="row">
                 <div class="col-md-80 order-md-1">
                         <h4 class="md-3">Thông tin khách hàng</h4>
                             <div class="col-md-12">
                                 <label for="kh_ten">Họ tên</label>
-                                <input type="text" class="form-control" name="kh_ten" id="kh_ten">
-                            </div>
-                            <div class="col-md-12">
-                                <label for="kh_gioitinh">Giới tính</label>
-                                <input type="text" class="form-control" name="kh_gioitinh" id="kh_gioitinh">
-                            </div>
-                            <div class="col-md-12">
-                                <label for="kh_diachi">Địa chỉ</label>
-                                <input type="text" class="form-control" name="kh_diachi" id="kh_diachi">
+                                <input type="text" class="form-control" name="full_name" id="kh_ten" value=" <?php echo $_SESSION['ss_admin']; ?>">
                             </div>
                             <div class="col-md-12">
                                 <label for="kh_dienthoai">Điện thoại</label>
-                                <input type="text" class="form-control" name="kh_dienthoai" id="kh_dienthoai">
+                                <input type="text" class="form-control" name="phone" id="kh_dienthoai" value=" <?php echo $_SESSION['ss_phone']; ?>">
                             </div>
                             <div class="col-md-12">
                                 <label for="kh_email">Email</label>
-                                <input type="email" class="form-control" name="kh_email" id="kh_email">
+                                <input type="email" class="form-control" name="email" id="kh_email" value=" <?php echo $_SESSION['ss_email']; ?>" >
                             </div>
                             <div class="col-md-12">
-                                <label for="kh_ngaysinh">Ngày sinh</label>
-                                <input type="date" class="form-control" name="kh_ngaysinh" id="kh_ngaysinh">
+                                <label for="kh_diachi">Địa chỉ</label>
+                                <input type="text" class="form-control" name="address" id="kh_diachi">
                             </div>
-                            <div class="col-md-12">
-                                <label for="kh_cmnd">CMND</label>
-                                <input type="text" class="form-control" name="kh_cmnd" id="kh_cmnd">
-                            </div>
-
+                           
+                            <?php }?>
                         <h4 class="mb-3">Hình thức thanh toán</h4>
 
                         <div class="d-block my-3">
@@ -167,7 +164,7 @@
                             <?php  } }?>
                             <div style="font-size:20px; margin-bottom: 20px">
                             <span>Tổng thành tiền:</span>
-                            <span ><?php echo $thanhtien + $thanhtien1 ?></span>
+                            <input name="amount" value="<?php echo $thanhtien + $thanhtien1 ?>">
                             </div>
                             <div class="input-group">
                             <input type="text" class="form-control" placeholder="Mã khuyến mãi">
@@ -182,6 +179,9 @@
                     </div>
                 </div>
                 
+              </div>
+              <button class="btn btn-primary btn-lg btn-block"  name="btn_upd">Đặt
+                            hàng</button>
             </form>
             
         </div>
@@ -189,10 +189,7 @@
     </main>
                   <!--End Form-->
               <!--End liên hệ-->
-              <button class="btn btn-primary btn-lg btn-block" type="submit" name="btnDatHang">Đặt
-                            hàng</button>
-              </div>
-             
+              
 
         </div>
           <!--end section 2-->

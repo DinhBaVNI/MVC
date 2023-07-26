@@ -52,7 +52,7 @@
         <div class="khung-chua-san-pham">
             <div class="section">
               <!--Thanh tiêu đề-->
-              <p class="section-head">Danh Sách Sản Phẩm</p>
+              <p class="section-head">Sửa sản phẩm nổi bật</p>
               <!--End Thanh tiêu đề-->
               <!--Form-->
               <form action="" method="post" enctype="multipart/form-data">

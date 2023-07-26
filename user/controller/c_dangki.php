@@ -7,6 +7,8 @@
         $fullname = $_POST['full_name'];
         $phone = $_POST['phone'];
         $email = $_POST['email'];
+        $date = $_POST['date'];
+        $cmnd = $_POST['cmnd'];
 
         $loi = array();
         if($username == ''){
@@ -24,6 +26,12 @@
         if($email == ''){
             $loi['email'] = 'email must no empty ';
         }
+        if($email == ''){
+            $loi['date'] = 'date must no empty ';
+        }
+        if($cmnd == ''){
+            $loi['cmnd'] = 'cmnd must no empty ';
+        }
         
         if(!$loi){
             $db->insert('usser', array(
@@ -31,7 +39,9 @@
             'password'=>$password,
             'full_name'=>$fullname,
             'phone'=>$phone,
-            'email'=>$email));
+            'email'=>$email,
+            'date'=>$date,
+            'cmnd'=>$cmnd));
         }
     
         if(!$loi){

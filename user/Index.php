@@ -54,11 +54,14 @@ switch($page){
         break;
 	case'thongtinkh':
         // include "controller/c_giohang.php";
-		include "view/v_thongtinkh.php";
+		include "controller/c_thongtinkh.php";
         break;
 	case'donhang':
-        include "controller/c_giohang.php";
+        include "controller/c_donhang.php";
         break;
+	case'suathongtin':
+		include "controller/c_suathongtin.php";
+		break;
 	case 'thanhtoan':
 		include "controller/c_thanhtoan.php";
 }	

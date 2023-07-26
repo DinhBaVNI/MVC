@@ -1,0 +1,64 @@
+.khung-chua-san-pham{
+	margin-left: 90px;
+	display: inline-block;
+	width: 1960px;
+	min-width: 1960px;
+}
+.section{
+	display: inline-block;
+	height:auto;
+	width: auto;
+	background-color: rgb(136, 208, 226);
+	box-shadow: 14px 23px 12px 0px  #003e52;
+	border-radius: 5px;
+}
+.section-head{
+	margin: 0;
+	font-size: 22px;
+	border: 1px solid rgb(191, 191, 191);
+	margin-left: 2px;
+	padding-top: 8px;
+	width: auto;
+	padding-bottom: 5px;
+	text-indent: 30px;
+	background: linear-gradient(to right,#003e52,#1895b0);
+	color: white;
+	border-radius: 8px;
+	
+}
+
+p{
+    font-size: xx-large;
+}
+form{
+	padding-top: 20px;
+    text-align: center;
+}
+form thead tr th{
+    font-size: 18px;
+    padding-left: 80px;
+}
+form tbody tr td{
+       padding-left: 80px;
+}
+form tbody tr td a{
+		text-decoration: none;
+}
+.btn{
+    width: 20px;
+}
+.Sum{
+	margin-left: 600px;
+	font-size: 24px;
+}
+.Sum a{
+	text-decoration: none;
+}
+.Sum a:hover{
+	background-color:white ;
+	
+}
+
+
+
+

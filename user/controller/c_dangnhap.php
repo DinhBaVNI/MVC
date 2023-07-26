@@ -31,7 +31,9 @@ if(isset($_POST['btn_user'])){
 }
     if(!$loi){
         $_SESSION['ss_admin'] = $user[0]['full_name'];
-        $_SESSION['ss_admin1'] = $user[0]['id'];
+        $_SESSION['ss_phone'] = $user[0]['phone'];
+        $_SESSION['ss_email'] = $user[0]['email'];
+        $_SESSION['ss_address'] = $user[0]['address'];
         header('location: ?page=trangchu');
     }
 }

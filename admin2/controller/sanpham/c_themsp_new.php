@@ -11,7 +11,7 @@
         $image = $_FILES['img']['name'];
         $image_temp=$_FILES['img']['tmp_name'];
       
-        move_uploaded_file($image_temp, '../img/'.$image); 
+        move_uploaded_file($image_temp, '../img/sanphamnew/'.$image); 
 
         $loi = array();
         if($catalog_id== ''){

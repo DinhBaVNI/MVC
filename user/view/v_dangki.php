@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Shop Phone ĐìnhBa</title>
-    <link rel="icon" href="img/logo/Logo-name.jpg">
+    <link rel="icon" href="img/logo/Logoname.jpg">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link  rel="stylesheet" href="css/Tieude.css">
     <link rel="stylesheet" href="css/Style.css">
@@ -30,7 +30,7 @@
 
         <!-- Phần header -->
 		<div class="header">
-			<a href="?page=trangchu"><img src="img/logo/Logo-name.jpg" alt="" width="120" height="90" class="logo" />
+			<a href="?page=trangchu"><img src="img/logo/Logoname.jpg" alt="" width="120" height="90" class="logo" />
 			</a>
 			<span class="ten-cua-hang">ADMIN</span>
 			<div class="search">
@@ -78,6 +78,16 @@
                         <input class="inp"  type="email" name="email" placeholder="email"><br>
                         <?php if (isset($loi['email'])) { ?>
                         <span style="color: red"><?php echo $loi['email']; ?></span>
+                        <?php } ?><br>
+
+                        <input class="inp"  type="date" name="date" ><br>
+                        <?php if (isset($loi['date'])) { ?>
+                        <span style="color: red"><?php echo $loi['date']; ?></span>
+                        <?php } ?><br>
+
+                        <input class="inp"  type="text" name="cmnd" placeholder="cmnd"><br>
+                        <?php if (isset($loi['cmnd'])) { ?>
+                        <span style="color: red"><?php echo $loi['cmnd']; ?></span>
                         <?php } ?><br>
                         
                             <button name="btn_sign" class="bt_n">ADD</button>

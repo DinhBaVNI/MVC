@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Shop Phone ĐìnhBa</title>
-    <link rel="icon" href="img/logo/Logo-name.jpg">
+    <link rel="icon" href="img/logo/Logoname.jpg">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link  rel="stylesheet" href="css/Tieude.css">
     <link rel="stylesheet" href="css/Style.css">
@@ -22,7 +22,7 @@
 				<li><a href="#">Liên hệ</a></li>
 			</ul>
 			<ul class="list-right">
-                <li style="color:red">
+                <li>
                 <?php 
                     if (isset($_SESSION['ss_admin'])){?>
                      <?php echo $_SESSION['ss_admin']; ?>
@@ -40,7 +40,7 @@
 
         <!-- Phần header -->
 		<div class="header">
-			<a href="?page=trangchu"><img src="img/logo/Logo-name.jpg" alt="" width="120" height="90" class="logo" />
+			<a href="?page=trangchu"><img src="img/logo/Logoname.jpg" alt="" width="120" height="90" class="logo" />
 			</a>
 			<span class="ten-cua-hang">Shop phone online</span>
 			<div class="search">
